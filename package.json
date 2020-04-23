@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "android-red": "ENVFILE=.env.redlabel npm run android -- --variant \"redlabelDebug\" --appIdSuffix \"redlabel\"",
+    "android-green": "ENVFILE=.env.greenlabel npm run android -- --variant \"greenlabelDebug\" --appIdSuffix \"greenlabel\"",
     "ios": "react-native run-ios",
     "ios-red": "ENVFILE=.env.redlabel npm run ios -- --scheme \"redlabel\"",
     "ios-green": "ENVFILE=.env.greenlabel npm run ios -- --scheme \"greenlabel\"",

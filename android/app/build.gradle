@@ -134,6 +134,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        resValue "string", "build_config_package", "com.whitelabel"
     }
     splits {
         abi {
@@ -161,6 +162,18 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    
+    flavorDimensions "whitelabel"
+    productFlavors {
+        redlabel {
+            dimension "whitelabel"
+            applicationIdSuffix ".redlabel"
+        }
+        greenlabel {
+            dimension "whitelabel"
+            applicationIdSuffix ".greenlabel"
         }
     }
 

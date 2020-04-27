@@ -15,7 +15,7 @@ const App = () => {
         }}>
         <Text style={{color: 'white'}}>{Config.APP_NAME}</Text>
       </View>
-      <WebView source={{uri: 'https://infinite.red'}} />
+      <WebView source={{uri: `http://localhost:3000/#${Config.APP_NAME}`}} />
     </View>
   )
 }

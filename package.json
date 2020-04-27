@@ -9,6 +9,7 @@
     "ios": "react-native run-ios",
     "ios-red": "ENVFILE=.env.redlabel npm run ios -- --scheme \"redlabel\"",
     "ios-green": "ENVFILE=.env.greenlabel npm run ios -- --scheme \"greenlabel\"",
+    "web": "cd web && npm run start",
     "start": "react-native start",
     "lint": "eslint ."
   },
